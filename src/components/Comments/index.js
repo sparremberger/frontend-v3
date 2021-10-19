@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { listComments } from "../../actions/commentActions";
 import Comentario from "../Comentario";
 import { Content } from "./index.styled";
+import CommentForm from "../CommentForm";
 
 // Comentario = um único comentário
 // Comments = o componente dos comentários, que vai acoplado em uma page
@@ -33,6 +34,7 @@ const Comments = () => {
                     })}
                 </div>
             )}
+            <CommentForm></CommentForm>
         </Content>
     );
 };
