@@ -1,0 +1,31 @@
+:root {
+    --verde: rgb(86, 182, 138);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: var(--verde);
+    min-width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
